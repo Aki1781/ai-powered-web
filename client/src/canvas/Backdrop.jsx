@@ -16,6 +16,7 @@ const Backdrop = () => {
       rotation={[Math.PI / 2, 0, 0]}
       position={[0, 0, -0.14]}
     >
+      {/* Focused light for small, crisp shadow */}
       <RandomizedLight 
         amount={4}
         radius={9}
@@ -23,6 +24,7 @@ const Backdrop = () => {
         ambient={0.25}
         position={[5, 5, -10]}
       />
+      {/* Ambient-only light for overall brightness */}
       <RandomizedLight 
         amount={4}
         radius={5}
